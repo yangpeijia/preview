@@ -42,7 +42,7 @@ $orientation;
 
 //生成不同分辨率的预览视图
 for (i=0;i<len;i++) {
-    html.push('<div class="wrapper" data-height='+(devices[i].height+60)+' data-width='+devices[i].width+' style="width:'+devices[i].width+'px;height:'+(devices[i].height+60)+'px" data-system="'+devices[i].system+'" data-devicetype="'+devices[i].deviceType+'"><div class="buttons" style="width:'+devices[i].width+'"><button data-role="orientation" >切换横屏</button></div><div class="device" data-height='+devices[i].height+' data-width='+devices[i].width+' style="width: '+ devices[i].width + 'px;height:' + devices[i].height + 'px"><iframe id="previewFrame'+i+'" src="previewFrame.html" title=' + devices[i].name + '; style="width:'+ devices[i].width + 'px;height:' + devices[i].height + 'px;transform-origin:top left 0" ></iframe></div></div>')
+    html.push('<div class="wrapper" data-height='+(devices[i].height+60)+' data-width='+devices[i].width+' style="width:'+devices[i].width+'px;height:'+(devices[i].height+60)+'px" data-system="'+devices[i].system+'" data-devicetype="'+devices[i].deviceType+'"><div class="buttons" style="width:'+devices[i].width+'"><button data-role="orientation" >切换横屏</button></div><div class="device" data-height='+devices[i].height+' data-width='+devices[i].width+' style="width: '+ devices[i].width + 'px;height:' + devices[i].height + 'px"><iframe id="previewFrame'+i+'" src="previewhtml/previewFrame.html" title=' + devices[i].name + '; style="width:'+ devices[i].width + 'px;height:' + devices[i].height + 'px;transform-origin:top left 0" ></iframe></div></div>')
 }
 
 $('.view').html(html.join(''));
@@ -296,7 +296,7 @@ $('[data-role="add"]').on("click.preview",function(e){
     }
 
 
-    $('.view').append('<div class="wrapper" data-height='+(device1.height+60)+' data-width='+device1.width+' style="width:'+device1.width+'px;height:'+(device1.height+60)+'px"><div class="buttons" style="width:'+device1.width+'"><button data-role="orientation" >切换横屏</button></div><div class="device" data-height='+device1.height+' data-width='+device1.width+' style="width: '+ device1.width + 'px;height:' + device1.height + 'px"><iframe id="previewFrame'+(devices.length-1)+'" src="previewFrame.html" style="width:'+ device1.width + 'px;height:' + device1.height + 'px;transform-origin:top left 0" ></iframe></div></div>')
+    $('.view').append('<div class="wrapper" data-height='+(device1.height+60)+' data-width='+device1.width+' style="width:'+device1.width+'px;height:'+(device1.height+60)+'px"><div class="buttons" style="width:'+device1.width+'"><button data-role="orientation" >切换横屏</button></div><div class="device" data-height='+device1.height+' data-width='+device1.width+' style="width: '+ device1.width + 'px;height:' + device1.height + 'px"><iframe id="previewFrame'+(devices.length-1)+'" src="previewhtml/previewFrame.html" style="width:'+ device1.width + 'px;height:' + device1.height + 'px;transform-origin:top left 0" ></iframe></div></div>')
     
     $('[data-role="orientation"]').on('click.orientation',function(e){
         
