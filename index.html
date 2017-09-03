@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel=stylesheet type=text/css href='css/reset.css'>
+    <link rel=stylesheet type=text/css href='css/index.css'>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="select-item">
+            <label class="label"><span class="label-content">zoom</span><span class="label-content" data-role="zoom-value">100%</span></label>
+            <input data-role="range"  type="range" min="25" max="100" value="100" >
+        </div>
+        <div class="select-item">
+            <label class="label">系统</label>
+            <button data-role="system">IOS</button>
+            <button data-role="system">Android</button>
+        </div>
+        <div class="select-item">
+            <label class="label">设备</label>
+            <button data-role="deviveType">手机</button>
+            <button data-role="deviveType">平板</button>
+        </div>
+        <div class="select-item">
+            <div>
+                <label>自定义视窗</label> 
+            </div>
+            <div>
+                <label class="input-label">宽</label><input class="input" type="text" data-role="width" value=''> *
+                <label class="input-label">高</label><input class="input" type="text" data-role="height" value=''>
+                <button data-role="add">添加</button>
+            </div>  
+        </div>
+    </div>
+
+    <div class="view-wrapper">
+        <div class="view">
+        
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
